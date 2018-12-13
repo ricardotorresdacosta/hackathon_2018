@@ -1,11 +1,15 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name ="ratingType")
 public class Rating extends AbstractModel{
 
-    private int fuckable;
+    private String type;
+    private int score;
+
+    @ManyToOne
+    private Date date;
 }

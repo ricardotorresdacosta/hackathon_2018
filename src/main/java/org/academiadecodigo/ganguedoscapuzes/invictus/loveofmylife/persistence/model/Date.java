@@ -1,37 +1,24 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "date")
 public class Date extends AbstractModel {
 
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true,
-            mappedBy = "date_lover"
-    )
+    @ManyToOne
     private Lover lover;
 
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true,
-            mappedBy = "date_evaluator"
-    )
-    private Lover evaluator;
+    @ManyToOne
+    private Evaluator evaluator;
 
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true,
-            mappedBy = "date_ratingtype"
+            mappedBy = "date"
     )
-    private Rating ratingType;
-
-    private int ratingValue;
-
+    private List<Rating> rating;
 
     public Lover getLover() {
         return lover;
@@ -41,27 +28,19 @@ public class Date extends AbstractModel {
         this.lover = lover;
     }
 
-    public Lover getEvaluator() {
+    public Evaluator getEvaluator() {
         return evaluator;
     }
 
-    public void setEvaluator(Lover evaluator) {
+    public void setEvaluator(Evaluator evaluator) {
         this.evaluator = evaluator;
     }
 
-    public Rating getRatingType() {
-        return ratingType;
+    public List<Rating> getRating() {
+        return rating;
     }
 
-    public void setRatingType(Rating ratingType) {
-        this.ratingType = ratingType;
-    }
-
-    public int getRatingValue() {
-        return ratingValue;
-    }
-
-    public void setRatingValue(int ratingValue) {
-        this.ratingValue = ratingValue;
+    public void setRating(List<Rating> rating) {
+        this.rating = rating;
     }
 }

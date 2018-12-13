@@ -1,23 +1,24 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name ="lover")
-public class Lover extends AbstractModel{
+@Table(name = "lover")
+public class Lover extends AbstractModel {
 
     private String name;
     private int age;
     private String city;
     private String gender;
 
-    @ManyToOne
-    private Date date;
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            orphanRemoval = true,
+            mappedBy = "lover"
+    )
+    private List<Date> date;
 
 
     public String getName() {
@@ -92,8 +93,6 @@ public class Lover extends AbstractModel{
 
     @OneToMany
     private List<Lover> evaluators = new ArrayList<>();
-
-
 
 
 }

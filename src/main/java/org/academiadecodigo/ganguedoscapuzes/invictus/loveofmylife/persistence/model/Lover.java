@@ -1,6 +1,7 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.ArrayList;
@@ -14,6 +15,10 @@ public class Lover extends AbstractModel{
     private int age;
     private String city;
     private String gender;
+
+    @ManyToOne
+    private Date date;
+
 
     public String getName() {
         return name;

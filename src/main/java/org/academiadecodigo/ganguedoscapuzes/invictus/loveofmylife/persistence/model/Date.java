@@ -4,6 +4,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 @Entity
 @Table(name = "date")
@@ -14,47 +15,46 @@ public class Date extends AbstractModel {
             orphanRemoval = true,
             mappedBy = "date_lover"
     )
-    private Lover lover;
+    private List<Lover> lovers;
 
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true,
             mappedBy = "date_evaluator"
     )
-    private Lover evaluator;
+    private List<Lover> evaluators;
 
     @OneToMany(
             cascade = CascadeType.ALL,
             orphanRemoval = true,
             mappedBy = "date_ratingtype"
     )
-    private Rating ratingType;
+    private List<Rating> ratingTypes;
 
     private int ratingValue;
 
-
-    public Lover getLover() {
-        return lover;
+    public List<Lover> getLovers() {
+        return lovers;
     }
 
-    public void setLover(Lover lover) {
-        this.lover = lover;
+    public void setLovers(List<Lover> lovers) {
+        this.lovers = lovers;
     }
 
-    public Lover getEvaluator() {
-        return evaluator;
+    public List<Lover> getEvaluators() {
+        return evaluators;
     }
 
-    public void setEvaluator(Lover evaluator) {
-        this.evaluator = evaluator;
+    public void setEvaluators(List<Lover> evaluators) {
+        this.evaluators = evaluators;
     }
 
-    public Rating getRatingType() {
-        return ratingType;
+    public List<Rating> getRatingTypes() {
+        return ratingTypes;
     }
 
-    public void setRatingType(Rating ratingType) {
-        this.ratingType = ratingType;
+    public void setRatingTypes(List<Rating> ratingTypes) {
+        this.ratingTypes = ratingTypes;
     }
 
     public int getRatingValue() {

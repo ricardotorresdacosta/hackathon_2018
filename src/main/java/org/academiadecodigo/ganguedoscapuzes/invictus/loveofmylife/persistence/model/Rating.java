@@ -7,5 +7,5 @@ import javax.persistence.Table;
 @Table(name ="ratingType")
 public class Rating extends AbstractModel{
 
-    private int fuckable;
+    private int valeu;
 }

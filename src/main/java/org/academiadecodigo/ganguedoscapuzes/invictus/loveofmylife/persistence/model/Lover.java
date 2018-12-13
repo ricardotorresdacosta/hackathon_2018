@@ -17,8 +17,7 @@ public class Lover extends AbstractModel{
     private String gender;
 
     @ManyToOne
-    private Date date;
-
+    private List<Date>  dateList;
 
     public String getName() {
         return name;

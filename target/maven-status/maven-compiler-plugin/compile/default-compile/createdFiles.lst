@@ -3,6 +3,9 @@ org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/RatingServi
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/RatingDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaEvaluatorDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/LoverService.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/ProfileServiceImp.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/ProfileService.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/ProfileDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/EvaluatorServiceImp.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Dating.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaDateDao.class
@@ -14,9 +17,11 @@ org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/EvaluatorService.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/Dao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/EvaluatorDao.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Profile.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/LoverServiceImp.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/AbstractModel.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Rating.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaProfileDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/CRUDService.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/controllers/MainController.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/AbstractJpaDao.class

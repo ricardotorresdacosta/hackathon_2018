@@ -14,7 +14,6 @@ public class Lover extends AbstractModel {
     private String gender;
     private String eyeColor;
     private int height;
-
     private String image;
 
 

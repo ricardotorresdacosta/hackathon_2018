@@ -26,5 +26,6 @@
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaRatingDao.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/CRUDService.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/DateDao.java
+/Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/controllers/ControllerLovers.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/RatingService.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/RatingServiceImp.java

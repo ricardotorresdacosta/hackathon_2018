@@ -8,6 +8,7 @@ org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/ProfileServ
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/ProfileDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/EvaluatorServiceImp.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Dating.class
+org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/controllers/ControllerLovers.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaDateDao.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/DateService.class
 org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Lover.class

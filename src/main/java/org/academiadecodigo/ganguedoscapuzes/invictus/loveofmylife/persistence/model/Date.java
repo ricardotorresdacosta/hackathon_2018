@@ -1,24 +1,27 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "date")
 public class Date extends AbstractModel {
 
-    @ManyToOne
+    @OneToOne
     private Lover lover;
 
-    @ManyToOne
+    @OneToOne
     private Evaluator evaluator;
 
     @OneToMany(
-            cascade = CascadeType.ALL,
+            cascade = {CascadeType.ALL},
             orphanRemoval = true,
-            mappedBy = "date"
+            mappedBy = "date",
+            fetch = FetchType.EAGER
     )
-    private List<Rating> rating;
+    private List<Rating> rating = new ArrayList<>();
+
 
     public Lover getLover() {
         return lover;

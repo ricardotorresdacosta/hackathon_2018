@@ -4,6 +4,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,11 +14,11 @@ public class Evaluator extends AbstractModel {
     private String name;
 
     @OneToMany(
-            cascade = CascadeType.ALL,
+            cascade = {CascadeType.ALL},
             orphanRemoval = true,
             mappedBy = "evaluator"
     )
-    private List<Date> dates;
+    private List<Date> dates = new ArrayList<>();
 
     public String getName() {
         return name;

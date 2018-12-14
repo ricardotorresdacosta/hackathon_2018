@@ -12,13 +12,16 @@ public class Lover extends AbstractModel {
     private int age;
     private String city;
     private String gender;
+    private String eyeColor;
+    private int height;
+
 
     @OneToMany(
-            cascade = CascadeType.ALL,
+            cascade = {CascadeType.ALL},
             orphanRemoval = true,
             mappedBy = "lover"
     )
-    private List<Date> date;
+    private List<Date> date = new ArrayList<>();
 
 
     public String getName() {
@@ -68,31 +71,6 @@ public class Lover extends AbstractModel {
     public void setHeight(int height) {
         this.height = height;
     }
-
-    public List<Rating> getRatings() {
-        return ratings;
-    }
-
-    public void setRatings(List<Rating> ratings) {
-        this.ratings = ratings;
-    }
-
-    public List<Lover> getEvaluators() {
-        return evaluators;
-    }
-
-    public void setEvaluators(List<Lover> evaluators) {
-        this.evaluators = evaluators;
-    }
-
-    private String eyeColor;
-    private int height;
-
-    @OneToMany
-    private List<Rating> ratings = new ArrayList<>();
-
-    @OneToMany
-    private List<Lover> evaluators = new ArrayList<>();
 
 
 }

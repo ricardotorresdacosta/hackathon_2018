@@ -5,6 +5,7 @@ import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.Date
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.EvaluatorService;
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.LoverService;
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.RatingService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,42 +23,32 @@ public class MainController {
     private LoverService loverService;
     private RatingService ratingService;
 
-
+    @Autowired
     public void setDateService(DateService dateService) {
         this.dateService = dateService;
     }
 
+    @Autowired
     public void setEvaluatorService(EvaluatorService evaluatorService) {
         this.evaluatorService = evaluatorService;
     }
 
+    @Autowired
     public void setLoverService(LoverService loverService) {
         this.loverService = loverService;
     }
 
+    @Autowired
     public void setRatingService(RatingService ratingService) {
         this.ratingService = ratingService;
     }
 
-    public DateService getDateService() {
-        return dateService;
-    }
 
-    public EvaluatorService getEvaluatorService() {
-        return evaluatorService;
-    }
-
-    public LoverService getLoverService() {
-        return loverService;
-    }
-
-    public RatingService getRatingService() {
-        return ratingService;
-    }
-
-    @GetMapping(path={"/list"})
-    public ResponseEntity<List<Date>> list(){
+    @GetMapping(path = {"/list"})
+    public ResponseEntity<List<Date>> list() {
         List<Date> dates = dateService.list();
         return new ResponseEntity<>(dates, HttpStatus.OK);
     }
+
+
 }

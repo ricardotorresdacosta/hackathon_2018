@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name ="ratingType")
+@Table(name ="rating")
 public class Rating extends AbstractModel{
 
     private String type;

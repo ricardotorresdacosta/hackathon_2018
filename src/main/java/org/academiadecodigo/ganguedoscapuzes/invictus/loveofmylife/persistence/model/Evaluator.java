@@ -7,18 +7,12 @@ import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name="evaluator")
 public class Evaluator extends AbstractModel {
 
     private String name;
 
-    @OneToMany(
-            cascade = {CascadeType.ALL},
-            orphanRemoval = true,
-            mappedBy = "evaluator"
-    )
-    private List<Date> dates = new ArrayList<>();
+
+    private List<Dating> datings = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -28,11 +22,20 @@ public class Evaluator extends AbstractModel {
         this.name = name;
     }
 
-    public List<Date> getDates() {
-        return dates;
+    public List<Dating> getDatings() {
+        return datings;
     }
 
-    public void setDates(List<Date> dates) {
-        this.dates = dates;
+    public void setDatings(List<Dating> datings) {
+        this.datings = datings;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Evaluator{" +
+                "name='" + name + '\'' +
+                ", datings=" + datings +
+                '}';
     }
 }

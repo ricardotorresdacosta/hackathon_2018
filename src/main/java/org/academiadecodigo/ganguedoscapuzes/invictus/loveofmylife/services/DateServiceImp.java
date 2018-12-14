@@ -1,7 +1,7 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services;
 
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.dao.DateDao;
-import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model.Date;
+import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model.Dating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,22 +18,22 @@ public class DateServiceImp implements DateService {
     }
 
     @Override
-    public List<Date> list() {
+    public List<Dating> list() {
         return dateDao.findAll();
     }
 
     @Override
-    public Date findById(Integer id) {
+    public Dating findById(Integer id) {
         return dateDao.findById(id);
     }
 
     @Override
-    public Date save(Date model) {
+    public Dating save(Dating model) {
         return dateDao.saveOrUpdate(model);
     }
 
     @Override
-    public void delete(Date model) {
+    public void delete(Dating model) {
 
         dateDao.delete(model.getId());
 

@@ -15,14 +15,16 @@ public class Lover extends AbstractModel {
     private String eyeColor;
     private int height;
 
+    private String image;
 
-    @OneToMany(
-            cascade = {CascadeType.ALL},
-            orphanRemoval = true,
-            mappedBy = "lover"
-    )
-    private List<Date> date = new ArrayList<>();
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public String getName() {
         return name;
@@ -73,4 +75,17 @@ public class Lover extends AbstractModel {
     }
 
 
+
+
+    @Override
+    public String toString() {
+        return "Lover{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", city='" + city + '\'' +
+                ", gender='" + gender + '\'' +
+                ", eyeColor='" + eyeColor + '\'' +
+                ", height=" + height +
+                '}';
+    }
 }

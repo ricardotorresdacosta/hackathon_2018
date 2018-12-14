@@ -7,9 +7,9 @@
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaLoverDao.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/LoverServiceImp.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/AbstractModel.java
-/Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Date.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/controllers/MainController.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/dao/jpa/JpaEvaluatorDao.java
+/Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Dating.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/LoverService.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/services/EvaluatorService.java
 /Users/codecadet/workspace/hackathon_2018/src/main/java/org/academiadecodigo/ganguedoscapuzes/invictus/loveofmylife/persistence/model/Lover.java

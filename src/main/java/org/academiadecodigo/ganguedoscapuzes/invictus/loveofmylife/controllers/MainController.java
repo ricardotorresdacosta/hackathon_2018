@@ -1,6 +1,7 @@
 package org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.controllers;
 
-import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model.Date;
+import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model.Dating;
+import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.persistence.model.Lover;
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.DateService;
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.EvaluatorService;
 import org.academiadecodigo.ganguedoscapuzes.invictus.loveofmylife.services.LoverService;
@@ -18,15 +19,12 @@ import java.util.List;
 @RequestMapping("/api")
 public class MainController {
 
-    private DateService dateService;
+    //private DateService dateService;
     private EvaluatorService evaluatorService;
     private LoverService loverService;
     private RatingService ratingService;
 
-    @Autowired
-    public void setDateService(DateService dateService) {
-        this.dateService = dateService;
-    }
+
 
     @Autowired
     public void setEvaluatorService(EvaluatorService evaluatorService) {
@@ -45,9 +43,10 @@ public class MainController {
 
 
     @GetMapping(path = {"/list"})
-    public ResponseEntity<List<Date>> list() {
-        List<Date> dates = dateService.list();
-        return new ResponseEntity<>(dates, HttpStatus.OK);
+    public ResponseEntity<List<Lover>> list() {
+        List<Lover> lovers = loverService.list();
+
+        return new ResponseEntity<>(lovers, HttpStatus.OK);
     }
 
 

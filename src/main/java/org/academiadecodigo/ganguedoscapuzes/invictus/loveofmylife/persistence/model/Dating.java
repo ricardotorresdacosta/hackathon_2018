@@ -4,23 +4,18 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "date")
-public class Date extends AbstractModel {
 
-    @OneToOne
+public class Dating extends AbstractModel {
+
+    private int score;
+
     private Lover lover;
 
-    @OneToOne
+
     private Evaluator evaluator;
 
-    @OneToMany(
-            cascade = {CascadeType.ALL},
-            orphanRemoval = true,
-            mappedBy = "date",
-            fetch = FetchType.EAGER
-    )
-    private List<Rating> rating = new ArrayList<>();
+
+    private Rating rating;
 
 
     public Lover getLover() {
@@ -39,11 +34,29 @@ public class Date extends AbstractModel {
         this.evaluator = evaluator;
     }
 
-    public List<Rating> getRating() {
+    public Rating getRating() {
         return rating;
     }
 
-    public void setRating(List<Rating> rating) {
+    public void setRating(Rating rating) {
         this.rating = rating;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    @Override
+    public String toString() {
+        return "Dating{" +
+                "score=" + score +
+                ", lover=" + lover +
+                ", evaluator=" + evaluator +
+                ", rating=" + rating +
+                '}';
     }
 }

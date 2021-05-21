@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List Profiles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center font-weight-bold"><samp class="text-danger"><i class="far fa-heart"></i>Love</samp> of my life</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div id="panelLoading" class="container">
+        <div class="row">
+            <div class="col">
+                <!-- loading img -->
+                <h1>Loading...</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="panelListUsers" class="container hand">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div id="listUsers" class="event mt-5 p4 d-flex flex-wrap bd-highlight mb-3 justtify-content-center">
+                    <!-- users list -->
+                    list
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <div id="panelUser" class="container">
+        <div class="row p-3">
+            <div class="col">
+                <h2 class=""><i class="fas fa-user-circle"></i> Profile</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a id="btnBackList" class="btn text-info"><i class="fas fa-arrow-circle-left"></i> Back to Profile List</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="userProfileCol" class="col">
+                    <!-- col details profile -->
+                </div>
+                <div id="userProfileRateCol" class="col">
+                    <!-- col mid rate for all users see  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="users.js"></script>
+</body>
+</html>
